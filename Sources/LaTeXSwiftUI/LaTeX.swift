@@ -286,7 +286,7 @@ extension LaTeX {
   
 }
 
-@available(iOS 16.1, *)
+if #available(iOS 16.1, *) {
 struct LaTeX_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
@@ -416,4 +416,5 @@ struct LaTeX_Previews: PreviewProvider {
     .previewDisplayName("Rendering Style and Animated")
   }
   
+}
 }
